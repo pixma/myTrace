@@ -212,18 +212,18 @@ SIM908 integrates TCP/IP protocol and extended TCP/IP AT commands which are very
 <wire x1="-16" y1="35" x2="-16" y2="49" width="0.254" layer="94"/>
 <wire x1="-16" y1="49" x2="14" y2="49" width="0.254" layer="94"/>
 <wire x1="14" y1="49" x2="14" y2="35" width="0.254" layer="94"/>
-<pin name="P$69" x="-21" y="37" length="middle"/>
-<pin name="P$70" x="-21" y="39" length="middle"/>
-<pin name="P$71" x="-21" y="41" length="middle"/>
-<pin name="P$72" x="-21" y="43" length="middle"/>
-<pin name="P$73" x="-21" y="45" length="middle"/>
-<pin name="P$74" x="-21" y="47" length="middle"/>
-<pin name="P$75" x="19" y="37" length="middle" rot="R180"/>
-<pin name="P$76" x="19" y="39" length="middle" rot="R180"/>
-<pin name="P$77" x="19" y="41" length="middle" rot="R180"/>
-<pin name="P$78" x="19" y="43" length="middle" rot="R180"/>
-<pin name="P$79" x="19" y="45" length="middle" rot="R180"/>
-<pin name="P$80" x="19" y="47" length="middle" rot="R180"/>
+<pin name="NC6" x="-21" y="37" length="middle"/>
+<pin name="NC5" x="-21" y="39" length="middle"/>
+<pin name="NC4" x="-21" y="41" length="middle"/>
+<pin name="NC3" x="-21" y="43" length="middle"/>
+<pin name="NC2" x="-21" y="45" length="middle"/>
+<pin name="NC1" x="-21" y="47" length="middle"/>
+<pin name="NC7" x="19" y="37" length="middle" rot="R180"/>
+<pin name="NC8" x="19" y="39" length="middle" rot="R180"/>
+<pin name="NC9" x="19" y="41" length="middle" rot="R180"/>
+<pin name="NC10" x="19" y="43" length="middle" rot="R180"/>
+<pin name="NC11" x="19" y="45" length="middle" rot="R180"/>
+<pin name="NC12" x="19" y="47" length="middle" rot="R180"/>
 <text x="-1" y="36" size="1.27" layer="94">NC</text>
 <wire x1="-16" y1="49" x2="-16" y2="58" width="0.254" layer="94"/>
 <wire x1="-16" y1="58" x2="14" y2="58" width="0.254" layer="94"/>

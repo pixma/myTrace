@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -58,6 +58,90 @@
 <library>
 <packages>
 <package name="SIM908-C_SIM548C">
+<smd name="P$1" x="-15" y="9" dx="2" dy="0.6" layer="1"/>
+<smd name="P$2" x="-15" y="8" dx="2" dy="0.6" layer="1"/>
+<smd name="P$3" x="-15" y="7" dx="2" dy="0.6" layer="1"/>
+<smd name="P$4" x="-15" y="6" dx="2" dy="0.6" layer="1"/>
+<smd name="P$5" x="-15" y="5" dx="2" dy="0.6" layer="1"/>
+<smd name="P$6" x="-15" y="4" dx="2" dy="0.6" layer="1"/>
+<smd name="P$7" x="-15" y="3" dx="2" dy="0.6" layer="1"/>
+<smd name="P$8" x="-15" y="2" dx="2" dy="0.6" layer="1"/>
+<smd name="P$9" x="-15" y="1" dx="2" dy="0.6" layer="1"/>
+<smd name="P$10" x="-15" y="0" dx="2" dy="0.6" layer="1"/>
+<smd name="P$11" x="-15" y="-1" dx="2" dy="0.6" layer="1"/>
+<smd name="P$12" x="-15" y="-2" dx="2" dy="0.6" layer="1"/>
+<smd name="P$13" x="-15" y="-3" dx="2" dy="0.6" layer="1"/>
+<smd name="P$14" x="-15" y="-4" dx="2" dy="0.6" layer="1"/>
+<smd name="P$15" x="-15" y="-5" dx="2" dy="0.6" layer="1"/>
+<smd name="P$16" x="-15" y="-6" dx="2" dy="0.6" layer="1"/>
+<smd name="P$17" x="-15" y="-7" dx="2" dy="0.6" layer="1"/>
+<smd name="P$18" x="-15" y="-8" dx="2" dy="0.6" layer="1"/>
+<smd name="P$19" x="-15" y="-9" dx="2" dy="0.6" layer="1"/>
+<smd name="P$20" x="-15" y="-10" dx="2" dy="0.6" layer="1"/>
+<smd name="P$21" x="-9.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$22" x="-8.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$23" x="-7.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$24" x="-6.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$25" x="-5.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$26" x="-4.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$27" x="-3.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$28" x="-2.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$29" x="-1.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$30" x="-0.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$31" x="0.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$32" x="1.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$33" x="2.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$34" x="3.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$35" x="4.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$36" x="5.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$37" x="6.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$38" x="7.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$39" x="8.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$40" x="9.5" y="-15.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$41" x="15" y="-10" dx="2" dy="0.6" layer="1" rot="R180"/>
+<smd name="P$42" x="15" y="-9" dx="2" dy="0.6" layer="1"/>
+<smd name="P$43" x="15" y="-8" dx="2" dy="0.6" layer="1"/>
+<smd name="P$44" x="15" y="-7" dx="2" dy="0.6" layer="1"/>
+<smd name="P$45" x="15" y="-6" dx="2" dy="0.6" layer="1"/>
+<smd name="P$46" x="15" y="-5" dx="2" dy="0.6" layer="1"/>
+<smd name="P$47" x="15" y="-4" dx="2" dy="0.6" layer="1"/>
+<smd name="P$48" x="15" y="-3" dx="2" dy="0.6" layer="1"/>
+<smd name="P$49" x="15" y="-2" dx="2" dy="0.6" layer="1"/>
+<smd name="P$50" x="15" y="-1" dx="2" dy="0.6" layer="1"/>
+<smd name="P$51" x="15" y="0" dx="2" dy="0.6" layer="1"/>
+<smd name="P$52" x="15" y="1" dx="2" dy="0.6" layer="1"/>
+<smd name="P$53" x="15" y="2" dx="2" dy="0.6" layer="1"/>
+<smd name="P$54" x="15" y="3" dx="2" dy="0.6" layer="1"/>
+<smd name="P$55" x="15" y="4" dx="2" dy="0.6" layer="1"/>
+<smd name="P$56" x="15" y="5" dx="2" dy="0.6" layer="1"/>
+<smd name="P$57" x="15" y="6" dx="2" dy="0.6" layer="1"/>
+<smd name="P$58" x="15" y="7" dx="2" dy="0.6" layer="1"/>
+<smd name="P$59" x="15" y="8" dx="2" dy="0.6" layer="1"/>
+<smd name="P$60" x="15" y="9" dx="2" dy="0.6" layer="1"/>
+<smd name="P$61" x="9.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$62" x="8.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$63" x="7.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$64" x="6.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$65" x="5.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$66" x="4.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$67" x="3.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$68" x="2.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$69" x="1.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$70" x="0.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$71" x="-0.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$72" x="-1.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$73" x="-2.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$74" x="-3.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$75" x="-4.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$76" x="-5.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$77" x="-6.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$78" x="-7.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$79" x="-8.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$80" x="-9.5" y="14.5" dx="2" dy="0.6" layer="1" rot="R90"/>
+<wire x1="-15" y1="14.5" x2="15" y2="14.5" width="0.4064" layer="21"/>
+<wire x1="15" y1="14.5" x2="15" y2="-15.5" width="0.4064" layer="21"/>
+<wire x1="15" y1="-15.5" x2="-15" y2="-15.5" width="0.4064" layer="21"/>
+<wire x1="-15" y1="-15.5" x2="-15" y2="14.5" width="0.4064" layer="21"/>
 </package>
 </packages>
 <symbols>
