@@ -6991,7 +6991,8 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.2032" drill="0.3048">
+<clearance class="0" value="0.1524"/>
 </class>
 </classes>
 <parts>
@@ -7031,11 +7032,13 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="47k"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP_POL" device="G" value="400uF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP_POL" device="G" value="400uF"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="GPS_DEBUG" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="10uF"/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="10uF"/>
 <part name="SJ1" library="jumper" deviceset="SJ2W" device=""/>
 <part name="C11" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="10uF"/>
+<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="470"/>
+<part name="C12" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7044,7 +7047,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <instances>
 <instance part="SCHEMATIC_FRAME" gate="G$1" x="0" y="0"/>
 <instance part="U$1" gate="G$1" x="307" y="160"/>
-<instance part="G1" gate="G$1" x="373.38" y="243.84" rot="R90"/>
+<instance part="G1" gate="G$1" x="370.84" y="203.2" rot="R90"/>
 <instance part="IC1" gate="G$1" x="73.66" y="177.8"/>
 <instance part="JP1" gate="G$1" x="20.32" y="50.8" rot="R180"/>
 <instance part="U$2" gate="G$1" x="337.82" y="48.26"/>
@@ -7078,11 +7081,13 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <instance part="R4" gate="G$1" x="350.52" y="111.76" rot="R90"/>
 <instance part="C3" gate="G$1" x="259.08" y="124.46"/>
 <instance part="C4" gate="G$1" x="246.38" y="124.46"/>
-<instance part="JP2" gate="G$1" x="236.22" y="175.26"/>
+<instance part="GPS_DEBUG" gate="G$1" x="236.22" y="175.26"/>
 <instance part="C9" gate="G$1" x="43.18" y="226.06" rot="R180"/>
 <instance part="C10" gate="G$1" x="43.18" y="129.54" rot="R180"/>
 <instance part="SJ1" gate="G$1" x="106.68" y="129.54" rot="R90"/>
 <instance part="C11" gate="G$1" x="106.68" y="114.3" rot="R180"/>
+<instance part="R5" gate="G$1" x="43.18" y="210.82" rot="R90"/>
+<instance part="C12" gate="G$1" x="218.44" y="124.46" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7294,9 +7299,9 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </segment>
 <segment>
 <pinref part="G1" gate="G$1" pin="-"/>
-<junction x="373.38" y="238.76"/>
-<wire x1="373.38" y1="238.76" x2="360.68" y2="238.76" width="0.1524" layer="91"/>
-<label x="360.68" y="238.76" size="1.016" layer="95" rot="R180" xref="yes"/>
+<junction x="370.84" y="198.12"/>
+<wire x1="370.84" y1="198.12" x2="358.14" y2="198.12" width="0.1524" layer="91"/>
+<label x="358.14" y="198.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="-"/>
@@ -7311,7 +7316,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <label x="246.38" y="111.76" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="GPS_DEBUG" gate="G$1" pin="1"/>
 <junction x="243.84" y="172.72"/>
 <wire x1="243.84" y1="172.72" x2="248.92" y2="172.72" width="0.1524" layer="91"/>
 <label x="248.92" y="172.72" size="1.016" layer="95" xref="yes"/>
@@ -7494,6 +7499,12 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="86.36" y="132.08"/>
 <wire x1="86.36" y1="132.08" x2="93.98" y2="132.08" width="0.1524" layer="91"/>
 <label x="93.98" y="132.08" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<junction x="43.18" y="215.9"/>
+<wire x1="43.18" y1="215.9" x2="33.02" y2="215.9" width="0.1524" layer="91"/>
+<label x="33.02" y="215.9" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SIM_VDD" class="0">
@@ -7682,25 +7693,13 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="154.94" y="147.32"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="RXD"/>
-<junction x="198.12" y="116.84"/>
-<wire x1="198.12" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="TXD"/>
-<junction x="198.12" y="119.38"/>
-<wire x1="198.12" y1="119.38" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="DTR"/>
 <junction x="198.12" y="124.46"/>
-<wire x1="198.12" y1="124.46" x2="205.74" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="124.46" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<junction x="215.9" y="124.46"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -7740,20 +7739,26 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="350.52" y="119.38"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="GSM_PWRKEY" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <junction x="363.22" y="119.38"/>
 <wire x1="363.22" y1="119.38" x2="368.3" y2="119.38" width="0.1524" layer="91"/>
 <label x="368.3" y="119.38" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="P1.6"/>
+<junction x="58.42" y="185.42"/>
+<wire x1="58.42" y1="185.42" x2="53.34" y2="185.42" width="0.1524" layer="91"/>
+<label x="53.34" y="185.42" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="VRTC" class="0">
 <segment>
 <pinref part="G1" gate="G$1" pin="+"/>
-<junction x="373.38" y="248.92"/>
-<wire x1="373.38" y1="248.92" x2="360.68" y2="248.92" width="0.1524" layer="91"/>
-<label x="360.68" y="248.92" size="1.016" layer="95" rot="R180" xref="yes"/>
+<junction x="370.84" y="208.28"/>
+<wire x1="370.84" y1="208.28" x2="358.14" y2="208.28" width="0.1524" layer="91"/>
+<label x="358.14" y="208.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VRTC"/>
@@ -7769,6 +7774,12 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="326" y1="161" x2="332" y2="161" width="0.1524" layer="91"/>
 <label x="332" y="161" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="P1.4"/>
+<junction x="58.42" y="190.5"/>
+<wire x1="58.42" y1="190.5" x2="53.34" y2="190.5" width="0.1524" layer="91"/>
+<label x="53.34" y="190.5" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GSM_RI" class="0">
 <segment>
@@ -7776,6 +7787,12 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="326" y="163"/>
 <wire x1="326" y1="163" x2="332" y2="163" width="0.1524" layer="91"/>
 <label x="332" y="163" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="P1.3"/>
+<junction x="58.42" y="193.04"/>
+<wire x1="58.42" y1="193.04" x2="53.34" y2="193.04" width="0.1524" layer="91"/>
+<label x="53.34" y="193.04" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GSM_DCD" class="0">
@@ -7785,6 +7802,12 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="326" y1="165" x2="332" y2="165" width="0.1524" layer="91"/>
 <label x="332" y="165" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="P1.2"/>
+<junction x="58.42" y="195.58"/>
+<wire x1="58.42" y1="195.58" x2="53.34" y2="195.58" width="0.1524" layer="91"/>
+<label x="53.34" y="195.58" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GSM_CTS" class="0">
 <segment>
@@ -7792,6 +7815,12 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="326" y="167"/>
 <wire x1="326" y1="167" x2="332" y2="167" width="0.1524" layer="91"/>
 <label x="332" y="167" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="P1.1"/>
+<junction x="58.42" y="198.12"/>
+<wire x1="58.42" y1="198.12" x2="53.34" y2="198.12" width="0.1524" layer="91"/>
+<label x="53.34" y="198.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GSM_RTS" class="0">
@@ -7801,21 +7830,11 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="326" y1="169" x2="332" y2="169" width="0.1524" layer="91"/>
 <label x="332" y="169" size="1.016" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="GSM_TXD" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="TXD"/>
-<junction x="326" y="171"/>
-<wire x1="326" y1="171" x2="332" y2="171" width="0.1524" layer="91"/>
-<label x="332" y="171" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GMS_RXD" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="RXD"/>
-<junction x="326" y="173"/>
-<wire x1="326" y1="173" x2="332" y2="173" width="0.1524" layer="91"/>
-<label x="332" y="173" size="1.016" layer="95" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="P1.0"/>
+<junction x="58.42" y="200.66"/>
+<wire x1="58.42" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
+<label x="53.34" y="200.66" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_TXD" class="0">
@@ -7826,7 +7845,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <label x="280" y="178" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="3"/>
+<pinref part="GPS_DEBUG" gate="G$1" pin="3"/>
 <junction x="243.84" y="177.8"/>
 <wire x1="243.84" y1="177.8" x2="248.92" y2="177.8" width="0.1524" layer="91"/>
 <label x="248.92" y="177.8" size="1.016" layer="95" xref="yes"/>
@@ -7840,7 +7859,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <label x="280" y="175" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="GPS_DEBUG" gate="G$1" pin="2"/>
 <junction x="243.84" y="175.26"/>
 <wire x1="243.84" y1="175.26" x2="248.92" y2="175.26" width="0.1524" layer="91"/>
 <label x="248.92" y="175.26" size="1.016" layer="95" xref="yes"/>
@@ -7852,6 +7871,12 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="326" y="158"/>
 <wire x1="326" y1="158" x2="332" y2="158" width="0.1524" layer="91"/>
 <label x="332" y="158" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="P1.5"/>
+<junction x="58.42" y="187.96"/>
+<wire x1="58.42" y1="187.96" x2="53.34" y2="187.96" width="0.1524" layer="91"/>
+<label x="53.34" y="187.96" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7878,6 +7903,80 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="58.42" y="220.98"/>
 <wire x1="58.42" y1="220.98" x2="53.34" y2="220.98" width="0.1524" layer="91"/>
 <label x="53.34" y="220.98" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<junction x="43.18" y="205.74"/>
+<wire x1="43.18" y1="205.74" x2="33.02" y2="205.74" width="0.1524" layer="91"/>
+<label x="33.02" y="205.74" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<junction x="223.52" y="124.46"/>
+<wire x1="223.52" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
+<label x="228.6" y="124.46" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="UART0_TXD" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="P3.4"/>
+<junction x="58.42" y="144.78"/>
+<wire x1="58.42" y1="144.78" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
+<label x="53.34" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="RXD"/>
+<junction x="198.12" y="116.84"/>
+<wire x1="198.12" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
+<label x="205.74" y="116.84" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="UART0_RXD" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="P3.5"/>
+<junction x="58.42" y="142.24"/>
+<wire x1="58.42" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
+<label x="53.34" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="TXD"/>
+<junction x="198.12" y="119.38"/>
+<wire x1="198.12" y1="119.38" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
+<label x="205.74" y="119.38" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="UART1_TXD" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="P3.6"/>
+<junction x="58.42" y="139.7"/>
+<wire x1="58.42" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
+<label x="53.34" y="139.7" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="RXD"/>
+<junction x="326" y="173"/>
+<wire x1="326" y1="173" x2="332" y2="173" width="0.1524" layer="91"/>
+<label x="332" y="173" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="UART1_RXD" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="P3.7"/>
+<junction x="58.42" y="137.16"/>
+<wire x1="58.42" y1="137.16" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
+<label x="53.34" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="TXD"/>
+<junction x="326" y="171"/>
+<wire x1="326" y1="171" x2="332" y2="171" width="0.1524" layer="91"/>
+<label x="332" y="171" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="P1.7"/>
+<junction x="58.42" y="182.88"/>
 </segment>
 </net>
 </nets>

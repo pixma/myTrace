@@ -1,0 +1,7 @@
+//MPD-File
+#ifndef(pack_C3) #declare global_pack_C3=yes; object {CAP_SMD_ELKO_PANASONIC_G("400uF",)translate<0,0,0> rotate<0,180.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<34.000000,0.000000,25.000000>translate<0,0.035000,0> }#end		//SMD Elko Panasonic G (rcl.lib) C3 400uF PANASONIC_G
+#ifndef(pack_C4) #declare global_pack_C4=yes; object {CAP_SMD_ELKO_PANASONIC_G("400uF",)translate<0,0,0> rotate<0,180.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<34.000000,0.000000,14.000000>translate<0,0.035000,0> }#end		//SMD Elko Panasonic G (rcl.lib) C4 400uF PANASONIC_G
+#ifndef(pack_L2) #declare global_pack_L2=yes; object {CAP_SMD_CHIP_0402()translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<17.000000,0.000000,1.000000>translate<0,0.035000,0> }#end		//SMD Capacitor 0402 L2 22uH C0402
+#ifndef(pack_LIBATRY) #declare global_pack_LIBATRY=yes; object {CON_PH_1X3()translate<0,0,0> rotate<0,0.000000,0>rotate<0,-180.000000,0> rotate<0,0,0> translate<8.000000,0.000000,2.370000>}#end		//Header 2,54mm Grid 3Pin 1Row (jumper.lib) LIBATRY  1X03
+#ifndef(pack_Q1) #declare global_pack_Q1=yes; object {IC_SMD_SOT23("","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-90.000000,0> rotate<0,0,0> translate<36.000000,0.000000,35.000000>translate<0,0.035000,0> }#end		//SOT23 Q1  SOT23
+#ifndef(pack_Q2) #declare global_pack_Q2=yes; object {IC_SMD_SOT23("","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-180.000000,0> rotate<0,0,0> translate<39.695200,0.000000,6.743200>translate<0,0.035000,0> }#end		//SOT23 Q2  SOT23
